@@ -1,0 +1,2 @@
+# GodotPlayground
+ Learning Godot/GScript
