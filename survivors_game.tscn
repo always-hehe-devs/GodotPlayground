@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bk6kcm5d4o2c"]
+[gd_scene load_steps=4 format=3 uid="uid://bk6kcm5d4o2c"]
 
 [ext_resource type="PackedScene" uid="uid://dorssxwwgi2fv" path="res://player.tscn" id="1_icplj"]
 [ext_resource type="PackedScene" uid="uid://cg0ebhl12rcn5" path="res://pine_tree.tscn" id="2_dabno"]
+[ext_resource type="PackedScene" uid="uid://b7rxhr0lofmwf" path="res://mob.tscn" id="3_b6ybt"]
 
 [node name="Game" type="Node2D"]
 y_sort_enabled = true
@@ -9,6 +10,24 @@ y_sort_enabled = true
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1943.0
 offset_bottom = 1100.0
+
+[node name="Mob2" parent="." instance=ExtResource("3_b6ybt")]
+position = Vector2(845, 337)
+
+[node name="Mob" parent="." instance=ExtResource("3_b6ybt")]
+position = Vector2(587, 625)
+
+[node name="Mob3" parent="." instance=ExtResource("3_b6ybt")]
+position = Vector2(950, 988)
+
+[node name="Mob4" parent="." instance=ExtResource("3_b6ybt")]
+position = Vector2(411, 966)
+
+[node name="Mob5" parent="." instance=ExtResource("3_b6ybt")]
+position = Vector2(1615, 684)
+
+[node name="Mob6" parent="." instance=ExtResource("3_b6ybt")]
+position = Vector2(194, 603)
 
 [node name="Player" parent="." instance=ExtResource("1_icplj")]
 position = Vector2(906, 600)
